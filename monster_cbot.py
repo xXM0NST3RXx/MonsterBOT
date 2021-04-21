@@ -37,14 +37,14 @@ def clicker(link,proxy):
     driver = webdriver.Chrome(options=coptions)
     try:
         driver.get(link)
-        time.sleep(3)
+        time.sleep(7)
 
         element = driver.find_element_by_id("skip_bu2tton")
         element.click()
 
         cprint("\nGetting a visit\n\n","blue")
 
-        time.sleep(2)
+        time.sleep(7)
 
         driver.quit()
     except:
